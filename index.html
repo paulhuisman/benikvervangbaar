@@ -1,7 +1,30 @@
 <html>
   <style>
-    body { display: flex; justify-content: center; align-items: center; }
-    h1 { font-size: 50px;}
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      opacity: 0;
+      animation: fadeInUp 700ms ease-in-out forwards;
+    }
   </style>
-  <body><h1>Ja.</h1></body>
-</html
+  <body>
+    <h1 class="fade-in-up">Ja.</h1>
+  </body>
+</html>
